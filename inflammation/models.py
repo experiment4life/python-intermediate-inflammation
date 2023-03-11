@@ -40,4 +40,3 @@ def daily_min(data):
     return: an array with a daily min (row)
     exceptions: non"""
     return np.min(data, axis=0)
-
