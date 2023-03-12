@@ -6,7 +6,6 @@ on: push
 
 # now define a single job 'build'
 jobs:
-
   build:
     # we can specify the oS to run
     runs-on: ubuntu-latest
