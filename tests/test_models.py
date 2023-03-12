@@ -60,4 +60,3 @@ def test_daily_minimum_string():
     from inflammation.models import daily_min
     with pytest.raises(TypeError):
         error_expected = daily_min([['Hello', 'there'], ['General', 'Kenobi']])
-    
