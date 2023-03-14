@@ -31,7 +31,7 @@ def test_daily_mean_integers():
 
 def test_daily_max():
     """Test that max function works for an array of positive integers."""
-    from inflammation.models import daily_mean
+    from inflammation.models import daily_max
 
     test_input = np.array([[4, 2, 5],
                            [1, 6, 2],
@@ -43,7 +43,7 @@ def test_daily_max():
 
 def test_daily_min_integers():
     """Test that mean function works for an array of positive and negative integers."""
-    from inflammation.models import daily_mean
+    from inflammation.models import daily_min
 
     test_input = np.array([[4, -2, 5],
                            [1, -6, 2],
