@@ -88,16 +88,16 @@ def daily_add_std(data):
 
 
 
-alice = Patient('Alice')
-print(alice)
+#alice = Patient('Alice')
+#print(alice)
 
-obs = alice.add_observation(3)
-print(obs)
+#obs = alice.add_observation(3)
+#print(obs)
 
-bob = Person('Bob')
-print(bob)
+#bob = Person('Bob')
+#print(bob)
 
-obs = bob.add_observation(4)
-print(obs)
+#obs = bob.add_observation(4)
+#print(obs)
 
 

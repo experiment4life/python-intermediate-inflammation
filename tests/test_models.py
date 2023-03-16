@@ -89,3 +89,20 @@ def test_daily_minimum_string():
     from inflammation.models import daily_min
     with pytest.raises(TypeError):
         error_expected = daily_min([['Hello', 'there'], ['General', 'Kenobi']])
+
+
+
+
+
+@pytest.mark.parametrize(
+    "test,expected",
+    [
+        ([[0, 0, 0], [0, 0, 0], [0, 0, 0]], [0, 0, 0]),
+        ([[1, 0, 100], [2, 0, 1], [3, 0, 50]], [0.82, 0, 40.41]),
+
+    ])
+def test_dayly_std(test, expected):
+
+    from inflammation.models import daily_add_std
+
+    npt.assert_array_almost_equal(daily_add_std(np.array(test)), np.array(expected), decimal=2)
